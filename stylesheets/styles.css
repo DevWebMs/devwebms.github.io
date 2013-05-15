@@ -46,7 +46,7 @@ a small {
 }
 
 .wrapper {
-  width:860px;
+  width:800px;
   margin:0 auto;
 }
 
@@ -96,9 +96,17 @@ img {
 }
 
 header {
-  width:270px;
-  float:left;
-  position:fixed;
+  margin-bottom: 25px;
+}
+
+header h1,h2{
+  display:none;
+}
+
+header #header-img {
+  background-image: url('/images/header.jpg');
+  width: 800px;
+  height: 250px;
 }
 
 header ul {
@@ -159,9 +167,34 @@ header ul a strong {
   color:#222;
 }
 
+a#facebook {
+  padding-left: 40px;
+  background-image: url('/images/facebook.png');
+  background-position: 0 3px;
+  background-size:30px 30px;
+  background-repeat:no-repeat;
+  vertical-align:middle;
+  font-size:2em;
+  line-height:40px;
+}
+
+a#github {
+  padding-left: 40px;
+  background-image: url('/images/octocat.png');
+  background-position: 0 3px;
+  background-size:30px 30px;
+  background-repeat:no-repeat;
+  vertical-align:middle;
+  font-size:2em;
+  line-height:40px;
+}
+
 section {
-  width:500px;
-  float:right;
+  padding-bottom:50px;
+}
+
+aside{
+  width:360px;
   padding-bottom:50px;
 }
 
@@ -177,9 +210,6 @@ hr {
 }
 
 footer {
-  width:270px;
-  float:left;
-  position:fixed;
   bottom:50px;
 }
 
@@ -226,6 +256,16 @@ footer {
   header {
     padding:0;
   }
+  header h1{
+    display:block;
+  }
+
+  header #header-img {
+    display:none;
+  }
+  header h1, h2 {
+    display:block;
+  }
   
   header ul, header p.view {
     position:static;
@@ -244,6 +284,14 @@ footer {
   header ul {
     display:none;
   }
+
+  header h1, h2 {
+    display:block;
+  }
+
+  header #header-img {
+    display:none;
+  }
 }
 
 @media print {
@@ -253,3 +301,5 @@ footer {
     color:#444;
   }
 }
+
+
